@@ -15,5 +15,6 @@ let toggleMenu = () => {
         menuContent.classList.add('hidden');
     }
 
+    console.log('this is a problem');
 
 }

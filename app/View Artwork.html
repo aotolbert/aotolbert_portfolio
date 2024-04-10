@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">  
+
+  <head>
+    <title>View Artwork</title>
+    <link rel="icon" type="image/x-icon" href="./images/Icons/abstractIcon-red/abstractRed.png">
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./hamburgers.css" />
+    <link rel="stylesheet" href="./viewArtwork.css" />
+    <!-- <link rel="stylesheet" href="./components/accordion.css" /> -->
+    <link rel="stylesheet" href="../components/header.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./jquery.maphilight.min.js"></script>
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
+    <script src="../components/top-nav.js" type="text/javascript" defer></script>
+
+  </head>
+
+  <body>
+    <header-component id="dynamicTitleComponent" title=""></header-component>
+
+    <!-- <div class="frontPageTextBox">
+        <p>
+            Explore our gallery of paintings, to poems, to sculptures, and whatever else our creatives have come up with! We are proud of what our members create and encourage you to explore each artists unique style and medium.
+        </p>
+    </div>   -->
+
+    <div id="paintingDisplayViewport"></div>
+    
+    <div id="infoPanelContainer">
+      <div id="viewingActionsPanel"></div>
+      <div id="viewingArtworkInfo"></div>
+    </div>
+
+    <!-- <footer-component></footer-component> -->
+
+    <!-- Gallery.js needs to be after the body as it relies on elements existing to append children to -->
+    <!-- Accordion.js needs to render after the gallery as it will act on the accordion elements that the gallery generates -->
+    <!-- <script src="./components/accordion.js" type="text/javascript" defer></script> -->
+    <script src="./viewArtwork.js" type="text/javascript" defer></script>
+
+  </body>
+</html>
